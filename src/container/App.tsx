@@ -1,8 +1,11 @@
 import React, {FC} from 'react';
+import Item from '../components/Item/item';
 import { Row, Col, Input } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 import './App.css';
-
+const obj = {
+  a: 1
+}
 const App: FC = () => (
     <div className="container"> 
       <div className="content">
@@ -14,7 +17,9 @@ const App: FC = () => (
           </Col>
         </Row>
         <Row>
-          <Col span={24}>col</Col>
+          <Col span={24}>
+            <Item listData= "helo" />
+          </Col>
         </Row>
         <Row>
           <Col span={24}>col</Col>
