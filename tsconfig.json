@@ -19,7 +19,10 @@
     "noEmit": true,
     "jsx": "react"
   },
+  "rules": {
+    "jsx-no-lambda": false
+  },
   "include": [
-    "src"
+    "src", "test/App.test.tsx", "test/App.test.js"
   ]
 }
